@@ -1,0 +1,121 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(145deg, #FFEB3B, #D32F2F); /* Gradient background */
+    color: #333;
+    min-height: 100vh;
+}
+
+/* Container for controls */
+.controls {
+    display: inline-block;
+    text-align: left;
+    background-color: #C49FF6;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    width: fit-content;
+}
+
+label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Buttons */
+button {
+    background-color: #D32F2F;
+    color: #fff;
+    padding: 12px 18px;
+    margin-top: 10px;
+	
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+.clear-button {
+    background-color: #D32F2F;
+    color: #fff;
+    padding: 12px 18px;
+    margin-top: 10px;
+    margin-bottom: 40px; /* مسافة إضافية أسفل هذا الزر فقط */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.clear-button:hover {
+    background-color: #B71C1C; /* لون أغمق عند التمرير على الزر */
+}
+
+
+button:hover {
+    background-color: #B71C1C;
+}
+
+#graph-container {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #C49FF6;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+canvas {
+    border: 1px solid black;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Test Container */
+.test-container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #C49FF6;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Input fields for test container */
+.test-container label,
+.test-container input[type="number"] {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 60px;
+}
+/* Footer Styling */
+.footer {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    background-color: #4CAF50;
+    color: purple;
+    padding: 10px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+h3 {
+    display: inline;
+}

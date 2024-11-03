@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-classification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>AI classification Project</h1>
+	<h2>Gais Salama</h2>
+
+    <div class="controls">
+        <label for="num-classes">Number of Classes:</label>
+        <select id="num-classes" onchange="updateClasses()">
+            <option value="2">2 Classes</option>
+            <option value="3">3 Classes</option>
+            <option value="4">4 Classes</option>
+        </select>
+
+        <label for="learning-rate">Learning Rate:</label>
+        <input type="number" id="learning-rate" value="0.01" step="0.01">
+        
+        <label for="iterations">Max Iterations:</label>
+        <input type="number" id="iterations" value="100">
+
+        <button onclick="trainModel()">Train Model</button>
+        <button onclick="enableAddNode()">Add Node</button>
+
+        <div>
+            <label for="node-class">Select Node Class:</label>
+            <select id="node-class">
+                <option value="0">Class 0</option>
+                <option value="1">Class 1</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="graph-container">
+        <canvas id="graph" width="500" height="500" onclick="addNode(event)"></canvas>
+    </div>
+
+    <div class="test-container">
+        <h2>Test Point Prediction</h2>
+        <label for="test-x1">X1:</label>
+        <input type="number" id="test-x1" step="0.1" value="0">
+        
+        <label for="test-x2">X2:</label>
+        <input type="number" id="test-x2" step="0.1" value="0">
+        
+        <button onclick="makePrediction()">Predict Class</button>
+        <p id="prediction">Prediction: </p>
+    </div>
+
+    <!-- Clear Button -->
+   <div>
+   <button class="clear-button" onclick="location.reload()">Clear</button>
+</div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        Programmed by <h3>Xbeta</h3>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
